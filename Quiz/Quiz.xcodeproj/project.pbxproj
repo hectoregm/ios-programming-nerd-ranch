@@ -284,6 +284,7 @@
 				F9AC879D1C3CB92700777CBC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
