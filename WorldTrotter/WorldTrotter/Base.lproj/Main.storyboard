@@ -55,6 +55,7 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.96078431372549022" green="0.95686274509803915" blue="0.94509803921568625" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="Teg-Rb-DPr" firstAttribute="top" secondItem="Pjc-hG-Ptf" secondAttribute="bottom" constant="8" id="0D0-G1-7GP"/>
                             <constraint firstItem="J35-nh-a1F" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="6Iq-rf-2Bu"/>
@@ -68,12 +69,21 @@
                             <constraint firstItem="4cu-7C-Gwh" firstAttribute="centerX" secondItem="eMP-6M-2np" secondAttribute="centerX" id="tRL-jZ-Bit"/>
                             <constraint firstItem="J35-nh-a1F" firstAttribute="centerX" secondItem="eMP-6M-2np" secondAttribute="centerX" id="zwZ-UN-3n8"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="x6G-59-egx" appends="YES" id="nfS-M8-NDq"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="celsiusLabel" destination="Pjc-hG-Ptf" id="b8f-g4-Pmj"/>
+                        <outlet property="textField" destination="J35-nh-a1F" id="hwd-RU-1nR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="x6G-59-egx">
+                    <connections>
+                        <action selector="dismissKeyboard:" destination="BYZ-38-t0r" id="gWl-lb-LU4"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="322.5" y="374.5"/>
         </scene>
