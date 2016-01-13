@@ -59,10 +59,28 @@ class ConversionViewController: UIViewController, UITextFieldDelegate {
         let existingTextHasDecimalSeparator = textField.text?.rangeOfString(".")
         let replacementTextHasDecimalSeparator = string.rangeOfString(".")
         
-        if existingTextHasDecimalSeparator != nil && replacementTextHasDecimalSeparator != nil {
+        let doubleDecimal = existingTextHasDecimalSeparator != nil && replacementTextHasDecimalSeparator != nil
+        
+        let decimalDigitSet = NSCharacterSet(charactersInString: "01234567890.")
+
+        var invalidNumber = false
+        for character in string.characters {
+            if !charset(decimalDigitSet, containsCharacter: character) {
+                invalidNumber = true
+                break
+            }
+        }
+        
+        if  doubleDecimal || invalidNumber {
             return false
         } else {
             return true
         }
+    }
+    
+    func charset(cset: NSCharacterSet, containsCharacter c: Character) -> Bool {
+        let s = String(c)
+        let result = s.rangeOfCharacterFromSet(cset)
+        return result != nil
     }
 }
