@@ -35,6 +35,12 @@ class ConversionViewController: UIViewController, UITextFieldDelegate {
         return nf
     }()
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        print("ConversionViewController loaded its view.")
+    }
+    
     @IBAction func fahrenheitFieldEditingChanged(textField: UITextField) {
         if let text = textField.text, value = Double(text) {
             fahrenheitValue = value
