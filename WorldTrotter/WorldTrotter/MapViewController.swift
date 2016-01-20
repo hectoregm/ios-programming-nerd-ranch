@@ -11,11 +11,29 @@ import MapKit
 
 class MapViewController: UIViewController {
   var mapView: MKMapView!
+  var selfButton: UIButton!
+  var locationManager: CLLocationManager!
 
   override func loadView() {
     mapView = MKMapView()
-
+    locationManager = CLLocationManager()
+    let locationStatus = CLLocationManager.authorizationStatus()
+    if locationStatus == .NotDetermined {
+      locationManager.requestWhenInUseAuthorization()
+    }
+    selfButton = UIButton(type: .DetailDisclosure)
+    
     view = mapView
+    
+    view.addSubview(selfButton)
+    
+    selfButton.addTarget(self, action: "getUserLocation", forControlEvents: .TouchUpInside)
+    
+    selfButton.translatesAutoresizingMaskIntoConstraints = false
+    let centerConstraint = selfButton.centerXAnchor.constraintEqualToAnchor(selfButton.superview?.centerXAnchor)
+    let buttomConstraint = selfButton.bottomAnchor.constraintEqualToAnchor(bottomLayoutGuide.topAnchor, constant: -8)
+    centerConstraint.active = true
+    buttomConstraint.active = true
     
     let segmentedControl = UISegmentedControl(items: ["Standard", "Hybrid", "Satellite"])
     segmentedControl.backgroundColor = UIColor.whiteColor().colorWithAlphaComponent(0.5)
@@ -53,5 +71,9 @@ class MapViewController: UIViewController {
     default:
       break
     }
+  }
+  
+  func getUserLocation() {
+    mapView.setUserTrackingMode(.Follow, animated: true)
   }
 }
