@@ -81,7 +81,7 @@ class ConversionViewController: UIViewController, UITextFieldDelegate {
       }
     }
 
-    if  doubleDecimal || invalidNumber {
+    if doubleDecimal || invalidNumber {
       return false
     } else {
       return true

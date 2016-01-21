@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Convert-->
@@ -17,21 +18,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="degrees Fahrenheit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eMP-6M-2np">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="degrees Fahrenheit" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eMP-6M-2np">
                                 <rect key="frame" x="147" y="120" width="305.5" height="43"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
-                                <color key="textColor" red="0.88235294117647056" green="0.34509803921568627" blue="0.16078431372549018" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="is really" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4cu-7C-Gwh">
-                                <rect key="frame" x="241" y="171" width="118.5" height="43"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pjc-hG-Ptf">
-                                <rect key="frame" x="241" y="222" width="116.5" height="84"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="70"/>
                                 <color key="textColor" red="0.88235294117647056" green="0.34509803921568627" blue="0.16078431372549018" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -48,9 +37,21 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="iWL-kg-ajt"/>
                                 </connections>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="degrees Celsius" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Teg-Rb-DPr">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="degrees Celsius" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Teg-Rb-DPr">
                                 <rect key="frame" x="173" y="314" width="254" height="43"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <color key="textColor" red="0.88235294117647056" green="0.34509803921568627" blue="0.16078431372549018" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="is really" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4cu-7C-Gwh">
+                                <rect key="frame" x="241" y="171" width="118.5" height="43"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pjc-hG-Ptf">
+                                <rect key="frame" x="241" y="222" width="116.5" height="84"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="70"/>
                                 <color key="textColor" red="0.88235294117647056" green="0.34509803921568627" blue="0.16078431372549018" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -60,14 +61,22 @@
                         <constraints>
                             <constraint firstItem="Teg-Rb-DPr" firstAttribute="top" secondItem="Pjc-hG-Ptf" secondAttribute="bottom" constant="8" id="0D0-G1-7GP"/>
                             <constraint firstItem="J35-nh-a1F" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="6Iq-rf-2Bu"/>
+                            <constraint firstItem="4cu-7C-Gwh" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="8mS-So-CY9"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="eMP-6M-2np" secondAttribute="trailing" id="Gi3-x0-84o"/>
                             <constraint firstItem="J35-nh-a1F" firstAttribute="centerX" secondItem="eMP-6M-2np" secondAttribute="centerX" id="Jqs-yQ-sEn"/>
+                            <constraint firstItem="Pjc-hG-Ptf" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="N85-uP-frZ"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="4cu-7C-Gwh" secondAttribute="trailing" id="RF7-gc-ylu"/>
                             <constraint firstItem="4cu-7C-Gwh" firstAttribute="top" secondItem="eMP-6M-2np" secondAttribute="bottom" constant="8" id="WB8-0c-XT0"/>
+                            <constraint firstItem="eMP-6M-2np" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Xwv-lE-GXf"/>
                             <constraint firstItem="Pjc-hG-Ptf" firstAttribute="centerX" secondItem="eMP-6M-2np" secondAttribute="centerX" id="YN0-z9-dX9"/>
                             <constraint firstItem="eMP-6M-2np" firstAttribute="top" secondItem="J35-nh-a1F" secondAttribute="bottom" constant="8" id="d7R-9O-NOX"/>
                             <constraint firstItem="Pjc-hG-Ptf" firstAttribute="top" secondItem="4cu-7C-Gwh" secondAttribute="bottom" constant="8" id="hYW-w0-psD"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="Pjc-hG-Ptf" secondAttribute="trailing" id="jDh-l5-60O"/>
                             <constraint firstItem="J35-nh-a1F" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kdm-Kg-qgp"/>
+                            <constraint firstItem="Teg-Rb-DPr" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="qft-k7-F3q"/>
                             <constraint firstItem="Teg-Rb-DPr" firstAttribute="centerX" secondItem="eMP-6M-2np" secondAttribute="centerX" id="s9m-ch-xnJ"/>
                             <constraint firstItem="4cu-7C-Gwh" firstAttribute="centerX" secondItem="eMP-6M-2np" secondAttribute="centerX" id="tRL-jZ-Bit"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="Teg-Rb-DPr" secondAttribute="trailing" id="wlC-3A-P1Q"/>
                             <constraint firstItem="J35-nh-a1F" firstAttribute="centerX" secondItem="eMP-6M-2np" secondAttribute="centerX" id="zwZ-UN-3n8"/>
                         </constraints>
                         <connections>
