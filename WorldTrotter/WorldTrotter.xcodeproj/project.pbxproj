@@ -16,6 +16,7 @@
 		F95305461C40BF510010A676 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F95305441C40BF510010A676 /* LaunchScreen.storyboard */; };
 		F9C005AF1C4600E800484897 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9C005AE1C4600E800484897 /* MapKit.framework */; };
 		F9C005B11C47584E00484897 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C005B01C47584E00484897 /* MapViewController.swift */; };
+		F9F212CB1C50AC6600E2000C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F9F212CD1C50AC6600E2000C /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,9 @@
 		F9A841AF1C5091710087630A /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
 		F9C005AE1C4600E800484897 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		F9C005B01C47584E00484897 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		F9F212CC1C50AC6600E2000C /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F9F212CE1C50AC6C00E2000C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F9F212CF1C50AC6D00E2000C /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +72,7 @@
 		F953053A1C40BF510010A676 /* WorldTrotter */ = {
 			isa = PBXGroup;
 			children = (
+				F9F212CD1C50AC6600E2000C /* Localizable.strings */,
 				F953053B1C40BF510010A676 /* AppDelegate.swift */,
 				F9119E2F1C43605500BE75AA /* ConversionViewController.swift */,
 				F953053F1C40BF510010A676 /* Main.storyboard */,
@@ -122,6 +127,7 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
 			);
 			mainGroup = F953052F1C40BF510010A676;
 			productRefGroup = F95305391C40BF510010A676 /* Products */;
@@ -139,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F95305461C40BF510010A676 /* LaunchScreen.storyboard in Resources */,
+				F9F212CB1C50AC6600E2000C /* Localizable.strings in Resources */,
 				F95305431C40BF510010A676 /* Assets.xcassets in Resources */,
 				F95305411C40BF510010A676 /* Main.storyboard in Resources */,
 			);
@@ -177,6 +184,16 @@
 				F95305451C40BF510010A676 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		F9F212CD1C50AC6600E2000C /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F9F212CC1C50AC6600E2000C /* Base */,
+				F9F212CE1C50AC6C00E2000C /* en */,
+				F9F212CF1C50AC6D00E2000C /* es */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
