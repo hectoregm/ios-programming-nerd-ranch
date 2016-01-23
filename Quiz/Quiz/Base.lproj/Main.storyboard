@@ -20,7 +20,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DZK-ft-Yzg">
                                 <rect key="frame" x="288" y="269" width="25" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ac-48-mNR">
@@ -33,7 +33,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rwy-Vc-G3I">
                                 <rect key="frame" x="288" y="28" width="25" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j6n-Ym-1xa">
@@ -46,20 +46,20 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vwF-Wn-gKs">
                                 <rect key="frame" x="279" y="28" width="42" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="6ac-48-mNR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4WO-c4-ytr"/>
                             <constraint firstItem="DZK-ft-Yzg" firstAttribute="top" secondItem="j6n-Ym-1xa" secondAttribute="bottom" constant="183" id="KEZ-c9-5EY"/>
                             <constraint firstItem="j6n-Ym-1xa" firstAttribute="top" secondItem="rwy-Vc-G3I" secondAttribute="bottom" constant="8" id="bfX-ZD-qoV"/>
                             <constraint firstItem="rwy-Vc-G3I" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="ce7-hK-ltd"/>
-                            <constraint firstItem="rwy-Vc-G3I" firstAttribute="centerX" secondItem="j6n-Ym-1xa" secondAttribute="centerX" id="e3F-iY-ytb"/>
                             <constraint firstItem="6ac-48-mNR" firstAttribute="top" secondItem="DZK-ft-Yzg" secondAttribute="bottom" constant="8" id="fXc-iU-Q3I"/>
                             <constraint firstItem="vwF-Wn-gKs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fjz-5A-eJo"/>
-                            <constraint firstItem="6ac-48-mNR" firstAttribute="centerX" secondItem="j6n-Ym-1xa" secondAttribute="centerX" id="gcO-JC-i8f"/>
-                            <constraint firstItem="DZK-ft-Yzg" firstAttribute="centerX" secondItem="j6n-Ym-1xa" secondAttribute="centerX" id="iXP-t7-arF"/>
+                            <constraint firstItem="j6n-Ym-1xa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ooO-gy-Wwb"/>
+                            <constraint firstItem="DZK-ft-Yzg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="s8e-ng-3iW"/>
                             <constraint firstItem="vwF-Wn-gKs" firstAttribute="top" secondItem="rwy-Vc-G3I" secondAttribute="top" id="sck-7w-Fek"/>
                             <constraint firstItem="rwy-Vc-G3I" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zni-yp-BZG"/>
                         </constraints>
@@ -67,7 +67,9 @@
                     <connections>
                         <outlet property="answerLabel" destination="DZK-ft-Yzg" id="1Fb-XZ-YFa"/>
                         <outlet property="currentQuestionLabel" destination="rwy-Vc-G3I" id="V9Q-lT-J63"/>
+                        <outlet property="currentQuestionLabelCenterXConstraint" destination="zni-yp-BZG" id="AJR-u6-yuq"/>
                         <outlet property="nextQuestionLabel" destination="vwF-Wn-gKs" id="QZr-Q0-7wH"/>
+                        <outlet property="nextQuestionLabelCenterXConstraint" destination="fjz-5A-eJo" id="KvP-wM-KS0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
