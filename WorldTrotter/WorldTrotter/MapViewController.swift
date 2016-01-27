@@ -42,7 +42,7 @@ class MapViewController: UIViewController {
     let segmentedControl = UISegmentedControl(items: [standardString, satelliteString, hybridString])
     segmentedControl.backgroundColor = UIColor.whiteColor().colorWithAlphaComponent(0.5)
     segmentedControl.selectedSegmentIndex = 0
-    
+
     segmentedControl.addTarget(self, action: "mapTypeChanged:", forControlEvents: .ValueChanged)
     
     segmentedControl.translatesAutoresizingMaskIntoConstraints = false
