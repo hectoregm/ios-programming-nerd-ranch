@@ -13,6 +13,7 @@
 		F95746601C59B4A700481D56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F957465F1C59B4A700481D56 /* Assets.xcassets */; };
 		F95746631C59B4A700481D56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F95746611C59B4A700481D56 /* LaunchScreen.storyboard */; };
 		F957466B1C59B5D100481D56 /* ItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F957466A1C59B5D100481D56 /* ItemsViewController.swift */; };
+		F9E92FCF1C5C77820052004B /* ItemStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E92FCE1C5C77820052004B /* ItemStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		F95746621C59B4A700481D56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F95746641C59B4A700481D56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F957466A1C59B5D100481D56 /* ItemsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsViewController.swift; sourceTree = "<group>"; };
+		F9E92FCE1C5C77820052004B /* ItemStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,13 +58,14 @@
 		F95746571C59B4A700481D56 /* Homepwner */ = {
 			isa = PBXGroup;
 			children = (
+				F957466A1C59B5D100481D56 /* ItemsViewController.swift */,
+				F90B8CAA1C5B409A007C0C77 /* Item.swift */,
+				F9E92FCE1C5C77820052004B /* ItemStore.swift */,
 				F95746581C59B4A700481D56 /* AppDelegate.swift */,
 				F957465C1C59B4A700481D56 /* Main.storyboard */,
 				F957465F1C59B4A700481D56 /* Assets.xcassets */,
 				F95746611C59B4A700481D56 /* LaunchScreen.storyboard */,
 				F95746641C59B4A700481D56 /* Info.plist */,
-				F957466A1C59B5D100481D56 /* ItemsViewController.swift */,
-				F90B8CAA1C5B409A007C0C77 /* Item.swift */,
 			);
 			path = Homepwner;
 			sourceTree = "<group>";
@@ -140,6 +143,7 @@
 			files = (
 				F957466B1C59B5D100481D56 /* ItemsViewController.swift in Sources */,
 				F90B8CAB1C5B409A007C0C77 /* Item.swift in Sources */,
+				F9E92FCF1C5C77820052004B /* ItemStore.swift in Sources */,
 				F95746591C59B4A700481D56 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
